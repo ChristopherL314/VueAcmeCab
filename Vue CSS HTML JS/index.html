@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AcmeCab2.0</title>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
 </head>
 <body>
     <h1>This is AcmeCab on Vue</h1>
+
     <div id="app">
         <p>{{ Title }} - {{ Author }} - {{ Age }}</p>
-      </div>
+        <button @click="Age += 1">Increase Age</button>
+        <button @click="Age -= 1">Decrease Age</button>
+        <button @click="changeTitle(userInput)">Find My Location</button>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
